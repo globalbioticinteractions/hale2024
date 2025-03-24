@@ -1,0 +1,8 @@
+provided_interaction_type_label,provided_interaction_type_id,mapped_to_interaction_type_label,mapped_to_interaction_type_id
+eats animals,,eats,http://purl.obolibrary.org/obo/RO_0002470
+eats seeds,,eats,http://purl.obolibrary.org/obo/RO_0002470
+eats leaves,,eats,http://purl.obolibrary.org/obo/RO_0002470
+eats scavenges,,eats,http://purl.obolibrary.org/obo/RO_0002470
+eats wood,,eats,http://purl.obolibrary.org/obo/RO_0002470
+eats flowers,,eats,http://purl.obolibrary.org/obo/RO_0002470
+

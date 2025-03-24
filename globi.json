@@ -1,0 +1,83 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "tables" : [ {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "https://pasta.lternet.edu/package/data/eml/edi/1508/3/87f0504590ee7def660b2fb99782813b",
+    "dcterms:bibliographicCitation" : " @article{Hale_2024, title={A highly resolved network reveals the role of terrestrial herbivory in structuring aboveground food webs}, volume={379}, ISSN={1471-2970}, url={http://dx.doi.org/10.1098/rstb.2023.0180}, DOI={10.1098/rstb.2023.0180}, number={1909}, journal={Philosophical Transactions of the Royal Society B: Biological Sciences}, publisher={The Royal Society}, author={Hale, Kayla R. S. and Curlis, John David and Auteri, Giorgia G. and Bishop, Sasha and French, Rowan L. K. and Jones, Lance E. and Mills, Kirby L. and Scholtens, Brian G. and Simons, Meagan and Thompson, Cody and Tourville, Jordon and Valdovinos, Fernanda S.}, year={2024}, month=jul }",
+    "delimiter" : ",",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "foreignKeys": [
+          { 
+            "columnReference": "referenceId",
+            "reference": {
+              "columnReference": "referenceId"
+            }
+          }
+      ],
+      "columns" : [ {
+        "name" : "ConsumerGroup",
+        "titles" : "ConsumerGroup",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonRank",
+        "titles" : "ConsumerLevel",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonName",
+        "titles" : "Consumer",
+        "datatype" : "string"
+      }, {
+        "name" : "interactionTypeName",
+        "titles" : "Interaction",
+        "datatype" : "string"
+      }, {
+        "name" : "ResourceGroup",
+        "titles" : "ResourceGroup",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonRank",
+        "titles" : "ResourceLevel",
+        "datatype" : "string"
+      }, {
+        "name" : "targetTaxonName",
+        "titles" : "Resource",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceId",
+        "titles" : "Source",
+        "datatype" : "string",
+        "separator": ","
+      } ]
+    }
+  }, {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "https://pasta.lternet.edu/package/data/eml/edi/1508/3/6697101db50fb701d51fff29f8ea17e0",
+    "dcterms:bibliographicCitation" : " @article{Hale_2024, title={A highly resolved network reveals the role of terrestrial herbivory in structuring aboveground food webs}, volume={379}, ISSN={1471-2970}, url={http://dx.doi.org/10.1098/rstb.2023.0180}, DOI={10.1098/rstb.2023.0180}, number={1909}, journal={Philosophical Transactions of the Royal Society B: Biological Sciences}, publisher={The Royal Society}, author={Hale, Kayla R. S. and Curlis, John David and Auteri, Giorgia G. and Bishop, Sasha and French, Rowan L. K. and Jones, Lance E. and Mills, Kirby L. and Scholtens, Brian G. and Simons, Meagan and Thompson, Cody and Tourville, Jordon and Valdovinos, Fernanda S.}, year={2024}, month=jul }",
+    "delimiter" : ",",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "primaryKey": "referenceId",
+      "columns" : [ {
+        "name" : "referenceId",
+        "titles" : "Source",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceCitation",
+        "titles" : "Citation",
+        "datatype" : "string"
+      } ]
+    }
+  } ]
+}
